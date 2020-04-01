@@ -1,0 +1,11 @@
+<ul>
+    {% for deck in decks %}
+    <li>{{ deck.name }}</li>
+    {% for card in deck.cards.all %}
+    <ul>
+        <li>{{ card.name }}</li>
+    </ul>
+    {% endfor %}
+
+    {% endfor %}
+</ul>
